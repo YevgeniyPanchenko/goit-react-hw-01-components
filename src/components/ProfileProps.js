@@ -1,4 +1,4 @@
-import Profile from './Profile/Profile';
+import Profile from './Profile/profile';
 
 function ProfileProps({ items }) {
   return (
