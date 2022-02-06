@@ -4,13 +4,12 @@ import user from './data/user.json';
 import Statistics from './components/Statistics'
 import data from './data/data.json'
 
+import FriendList from './components/FriendList';
+import friends from './data/friends.json'
+
 import Section from './components/Section';
 
-
-
-
 export default function App() {
-   
     return (
         <div>
             <Section title={'Task 1'}>
@@ -20,7 +19,7 @@ export default function App() {
                     tag={user.tag}
                     location={user.location}
                     stats={user.stats}
-          />
+            />
             </Section>
             
             <Section title={'Task 2'}> 
@@ -29,9 +28,10 @@ export default function App() {
                     stats={data}
                 />
             </Section>
-        </div>
-        
+
+            <Section title={'Task 3'}>
+                <FriendList friends={friends}/>
+            </Section>
+        </div>   
     )
-
-
  }
