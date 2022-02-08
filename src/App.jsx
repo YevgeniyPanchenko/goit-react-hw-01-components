@@ -1,11 +1,14 @@
-import Profile from './components/Profile'
+import Profile from './components/Profile/Profile'
 import user from './data/user.json';
 
-import Statistics from './components/Statistics'
+import Statistics from './components/Statistics/Statistics'
 import data from './data/data.json'
 
-import FriendList from './components/FriendList';
+import FriendList from './components/FriendList/FriendList';
 import friends from './data/friends.json'
+
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './data/transactions.json'
 
 import Section from './components/Section';
 
@@ -32,6 +35,10 @@ export default function App() {
             <Section title={'Task 3'}>
                 <FriendList friends={friends}/>
             </Section>
+
+            <Section title={'Task 4'}>
+                <TransactionHistory items={transactions}/>
+            </Section>            
         </div>   
     )
  }
