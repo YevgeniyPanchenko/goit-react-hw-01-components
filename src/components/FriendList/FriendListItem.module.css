@@ -1,0 +1,32 @@
+.friendUl {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: var(--secondary-text-color);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.avatar {
+  margin-right: 10px;
+}

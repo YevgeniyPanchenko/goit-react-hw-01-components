@@ -10,12 +10,12 @@ import friends from './data/friends.json'
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import transactions from './data/transactions.json'
 
-import Section from './components/Section';
+import Section from './components/Section/Section';
 
 export default function App() {
     return (
         <div>
-            <Section title={'Task 1'}>
+            <Section>
                  <Profile
                     avatar={user.avatar}
                     username={user.username}
@@ -25,20 +25,20 @@ export default function App() {
             />
             </Section>
             
-            <Section title={'Task 2'}> 
+            <Section> 
                 <Statistics
                     title={'Upload stats'}
                     stats={data}
                 />
             </Section>
 
-            <Section title={'Task 3'}>
+            <Section>
                 <FriendList friends={friends}/>
             </Section>
 
-            <Section title={'Task 4'}>
+            
                 <TransactionHistory items={transactions}/>
-            </Section>            
+                    
         </div>   
     )
  }

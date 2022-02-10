@@ -10,25 +10,25 @@ export default function Profile({
 }) {
   return (
     <div className={s.profile}>
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" width="200" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+      <div className={s.description}>
+        <img src={avatar} alt="User avatar" className={s.avatar} width="200" />
+        <h2 className={s.name}>{username}</h2>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.tag}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity"> {followers}</span>
+      <ul className={s.stats}>
+        <li className={s.item}>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}> {followers}</span>
         </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity"> {views}</span>
+        <li className={s.item}>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}> {views}</span>
         </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity"> {likes}</span>
+        <li className={s.item}>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}> {likes}</span>
         </li>
       </ul>
     </div>
